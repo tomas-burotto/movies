@@ -1,7 +1,7 @@
 class DesiredsController < ApplicationController
   before_action :set_desired, only: [:show, :update, :destroy]
   before_action :check_login_admin, only: [:index, :show, :update, :destroy]
-  before_action :check_login, only: [:create, :user]
+  before_action :check_login, only: [:create, :owns]
 
   #GET /desireds/user
   def owns
