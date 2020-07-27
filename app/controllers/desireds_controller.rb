@@ -23,7 +23,7 @@ class DesiredsController < ApplicationController
 
   # POST /desireds
   def create
-    data = watched_params
+    data = desired_params
     data["user_id"] = current_user.id
     @desired = Desired.new(data)
 
